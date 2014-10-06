@@ -6,38 +6,186 @@
 </description>
     <link>http://awkwordplay.com/</link>
     <atom:link href="http://awkwordplay.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sun, 05 Oct 2014 22:15:05 +0100</pubDate>
-    <lastBuildDate>Sun, 05 Oct 2014 22:15:05 +0100</lastBuildDate>
+    <pubDate>Mon, 06 Oct 2014 13:08:10 +0100</pubDate>
+    <lastBuildDate>Mon, 06 Oct 2014 13:08:10 +0100</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
-        <title>This is a test</title>
-        <description>&lt;p&gt;This is a test&lt;/p&gt;
+        <title>Haskell - Practical Advantages</title>
+        <description>&lt;p&gt;
+    There are more than a couple of meatless posts on the net about how the magical (not at all) functional programming paradigm is entirely different (no it isn&#39;t)
+    from everything you are used to, and how will it save the world (no it won&#39;t).
+&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;Tom&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints &amp;#39;Hi, Tom&amp;#39; to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;
+    So let&#39;s try to approach Haskell, which is the &lt;a href=&quot;http://stackoverflow.com/a/809983/441291&quot;&gt;800-pound gorilla&lt;/a&gt; in FP (functional programming) land, from a practical
+    angle, without empty buzzwords. If you think that this article also lacks meat, well, you are wrong because I am right, but nevertheless slap me in the face.
+&lt;/p&gt;
 
-&lt;p&gt;Check out the &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://github.com/jekyll/jekyll-help&quot;&gt;Jekyll’s dedicated Help repository&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;
+    I will intentionally remain in shallow waters to be easily digestible by the broadest possible audience.
+&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;footer&lt;/span&gt; &lt;span class=&quot;kr&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;site-footer&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
- &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;kr&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;subscribe&amp;quot;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;href&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;/feed.xml&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;span&lt;/span&gt; &lt;span class=&quot;kr&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;tooltip&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;kr&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;fa fa-rss&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;/i&amp;gt; Subscribe!&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
-  &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;div&lt;/span&gt; &lt;span class=&quot;kr&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;inner&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;a&lt;/span&gt;
-   &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;section&lt;/span&gt; &lt;span class=&quot;kr&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;copyright&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;All&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;content&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;copyright&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;href&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;mailto:dobronszki@gmail.com&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Dirk&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Fabisch&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;/a&amp;gt; &amp;amp;copy; 2014 &amp;amp;bull; All rights reserved.&amp;lt;/section&amp;gt;&lt;/span&gt;
-   &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;section&lt;/span&gt; &lt;span class=&quot;kr&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;poweredby&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Made&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;with&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;href&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;http://jekyllrb.com&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Jekyll&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;/a&amp;gt;&amp;lt;/section&amp;gt;&lt;/span&gt;
-  &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;/div&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;/footer&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;Static type system with type inference&lt;/h3&gt;
+
+&lt;p&gt;
+    Most programmers thinkink about static typing imagine something like this:
+&lt;/p&gt;
+
+&lt;pre&gt;
+    Foo* foo = new(Foo);
+&lt;/pre&gt;
+
+&lt;p&gt;
+    Usually when coders argue about wether static or dynamic typing is teh sh*t, they contrast the dynamically typed languages with C++/Java school of static typing (see above).
+    Sacrificing some sophistication the usual conclusion can be reduced to &quot;static typing can catch more bugs but you have to type more&quot; (let&#39;s not go into unit testing now).
+    If that&#39;s what you tought too, let me introduce you the &lt;a href=&quot;http://en.wikipedia.org/wiki/Hindley%E2%80%93Milner&quot;&gt;Hindley-Milner type inference&lt;/a&gt;. Basically with the help of it,
+    the compiler can type check your code without requiring you to annotate your types in even one place (I lied, in rare cases, it may be required).
+&lt;/p&gt;
+
+&lt;p&gt;
+    And no, Google&#39;s new language, Go does not have type inference, at least nothing comparable to what you can find in Haskell.
+    What the Go evangelists try to sell as type inference is a very little subset of (full) type inference. The Go way:
+&lt;/p&gt;
+
+&lt;pre&gt;
+func nonsense(a int, b string) int {    // &lt;- You have to annotate type or compilation fails.
+    c := 42 // &lt;- &quot;Initialization and declaration&quot; which is being sold as type inference
+    return a + c
+}
+&lt;/pre&gt;
+
+&lt;p&gt;
+    The Haskell way:
+&lt;/p&gt;
+
+&lt;pre&gt;
+nonsense a b = let c = 42 in a + c
+&lt;/pre&gt;
+
+&lt;p&gt;
+    That Haskell snippet will compile. What will be the type of it? You can query it by typing &quot;:t nonsense&quot; in GHCi
+&lt;/p&gt;
+
+&lt;pre&gt;
+&gt; :t nonsense
+nonsense :: Num a =&gt; a -&gt; t -&gt; a
+&lt;/pre&gt;
+
+&lt;p&gt;
+    That type signature basically means: nonsense is a function, with two arguments, first is a, which can be any type, as long as that given type can be used as
+    a number (is an instance of type class Num. Don&#39;t confuse type classes with Javaish classes, they are more like interfaces). The second argument can be any type, without
+    restriction. Why? Because we did not use it! The return value has the same type as the first argument. This part can be quite tricky to nonhaskellers, because return type
+    polymorphism is very rare in mainstream languages.
+&lt;/p&gt;
+
+&lt;p&gt;
+    As you can see, what we have here is the best of both worlds: compile time type checking without the requirement of annotating types by hand. Of course, type annotation is
+    useful for humans, but the Haskell compiler doesn&#39;t really care about it, he is clever enough to figure this out. In fact, a lot of times I (and I suspect others too, but I can&#39;t
+    speak for them) I write the function without type annotations, ask GHCi for the type signature and paste that into the source file to help others and my 2 months older version of
+    me understanding the code.
+&lt;/p&gt;
+
+&lt;h3&gt;Generics without breaking a sweat&lt;/h3&gt;
+
+&lt;p&gt;
+    As mindful readers may have already noticed in the above Haskell snippet, in Haskell you write generic code by default. You don&#39;t have to learn a template language
+    (there is a thing called Template Haskell but that is another story), you don&#39;t have to buy a 24 inch monitor to write generic function signatures. That is the default and
+    it comes for free.
+&lt;/p&gt;
+
+&lt;h3&gt;Syntax without clutter&lt;/h3&gt;
+
+&lt;p&gt;
+    One thing I noticed while learning Haskell, that the authors have a great sense of beauty. This can be generally said about the language as a whole, but it can be most easily
+    seen when looking at the syntax. Here are a couple of constructs side by side with the Go version, as that is a language I used directly before Haskell thus I hopefully
+    make no errors.
+&lt;/p&gt;
+
+&lt;pre&gt;
+// Switch case
+
+// Go
+a := 20
+switch a {
+    case 10:
+            return &quot;It&#39;s ten!&quot;
+    case 20:
+            return &quot;It&#39;s not ten :(&quot;
+}
+
+// Haskell
+let a = 20
+in case a of
+    10  -&gt; &quot;It&#39;s ten!&quot;
+    20  -&gt; &quot;It&#39;s not ten :(&quot;
+
+// Anonymous function
+
+func (a, b int) int {
+    a + b
+}
+
+\a b -&gt; a + b
+
+// Looping: transform a list/array
+
+// Go
+a := []int{1,2,3,4,5,6,7,8,9,10}
+f := func(a int) int {
+    return a+1
+}
+b := []int{}
+for _, v := range a {
+    b = append(b, v)
+}
+return v
+
+// Haskell
+let a = [1..10]
+    f = (+1)
+map f a
+&lt;/pre&gt;
+
+&lt;p&gt;
+    The differences really add up. There are some outrageous claims on the net about how much you can save with functional programming in terms of line count, but I think
+    a good estimate is that you can at least halve the LOCs.
+&lt;/p&gt;
+
+&lt;h3&gt;REPL&lt;/h3&gt;
+
+&lt;p&gt;
+    Haskell is amongst the few statically typed languages what you can use interactively. GHCi is the Haskell compiler, and despite being a not too mainstream language, it is
+    the Haskell platform is a breeze to use, even on Windows, its a one click install, and you can double click on any hs files and GHCi starts. GHCi is an incredible productivity
+    boost. Just to name a few cool features: :t gives back the type of any expression, :i will display information about the given type, you can set GHCi to clock all expressions
+    (display the milliseconds spent calculating the expression). The possibilities are endless, really.
+&lt;/p&gt;
+
+&lt;h3&gt;Type signatures are telling&lt;/h3&gt;
+
+&lt;p&gt;
+    The information dense type signature of Haskell functions allow us to effectively search for a function by approximate type with the help of a tool like
+    &lt;a href=&quot;http://www.haskell.org/hoogle/&quot;&gt;Hoogle&lt;/a&gt;.
+&lt;/p&gt;
+
+&lt;h3&gt;Conclusion&lt;/h3&gt;
+
+&lt;p&gt;
+    The general consensus on Haskell is that it&#39;s impractical. I think that opinion mainly stems from old experiences. I agree that it&#39;s still rough around some edges:
+    I am particularly worried about the lack of stack traces. The thought of running it on production servers and not seeing the source of an exception frankly scares the
+    sh*t out of me. But as a language it is very well designed, especially compared to the current mainstream languages.
+&lt;/p&gt;
 </description>
-        <pubDate>Sun, 05 Oct 2014 15:34:25 +0100</pubDate>
-        <link>http://awkwordplay.com/site/2014/10/05/this-is-a-test.html</link>
-        <guid isPermaLink="true">http://awkwordplay.com/site/2014/10/05/this-is-a-test.html</guid>
+        <pubDate>Sun, 31 Mar 2013 00:00:00 +0000</pubDate>
+        <link>http://awkwordplay.com/programming/2013/03/31/haskell-practical-advantages.html</link>
+        <guid isPermaLink="true">http://awkwordplay.com/programming/2013/03/31/haskell-practical-advantages.html</guid>
         
-        <category>featured</category>
+        <category>functional-programming,</category>
+        
+        <category>haskell</category>
         
         
-        <category>site</category>
+        <category>programming</category>
         
       </item>
     
